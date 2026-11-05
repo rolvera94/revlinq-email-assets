@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark"><meta name="supported-color-schemes" content="light dark">
+<title>Outlook dark mode test 2</title>
+<style>
+.t1y{display:inline !important}.t1n{display:none !important}
+</style>
+<style>
+:root{color-scheme:light dark;supported-color-schemes:light dark;}
+.t2y{display:inline !important}.t2n{display:none !important}
+</style>
+<style>
+[align=center] .t3y{display:inline !important}[align=center] .t3n{display:none !important}
+</style>
+<style>
+@media screen{.t4y{display:inline !important}.t4n{display:none !important}}
+</style>
+<style>
+@media (prefers-color-scheme: dark){.t5y{display:inline !important}.t5n{display:none !important}}
+</style>
+<style>
+[data-ogsc] .t6y{display:inline !important}[data-ogsc] .t6n{display:none !important}
+</style>
+<style>
+[data-ogsb] .t7y{display:inline !important}[data-ogsb] .t7n{display:none !important}
+</style>
+</head>
+<body style="margin:0;padding:0;background-color:#F2F2F2;">
+<style>
+.t8y{display:inline !important}.t8n{display:none !important}
+</style>
+<center style="width:100%;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%;background-color:#F2F2F2;color:#111111;margin:0 auto;"><tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%;max-width:600px;margin:0 auto;background-color:#FFFFFF;color:#111111;text-align:left;">
+<tr><td colspan="2" style="padding:16px 12px;font-family:Arial,sans-serif;font-size:20px;font-weight:bold;color:#111111;">Outlook dark mode test 2</td></tr>
+<tr><td colspan="2" style="padding:0 12px 12px;font-family:Arial,sans-serif;font-size:15px;color:#111111;">Part 1: which lines say YES?</td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;">1. Plain style rule</td><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;font-weight:bold;width:90px;" width="90"><span class="t1n">no</span><span class="t1y" style="display:none;mso-hide:all;">YES</span></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;">2. Style rule next to :root</td><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;font-weight:bold;width:90px;" width="90"><span class="t2n">no</span><span class="t2y" style="display:none;mso-hide:all;">YES</span></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;">3. Attribute selector</td><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;font-weight:bold;width:90px;" width="90"><span class="t3n">no</span><span class="t3y" style="display:none;mso-hide:all;">YES</span></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;">4. Any media query</td><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;font-weight:bold;width:90px;" width="90"><span class="t4n">no</span><span class="t4y" style="display:none;mso-hide:all;">YES</span></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;">5. Dark mode media query</td><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;font-weight:bold;width:90px;" width="90"><span class="t5n">no</span><span class="t5y" style="display:none;mso-hide:all;">YES</span></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;">6. Outlook data-ogsc hook</td><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;font-weight:bold;width:90px;" width="90"><span class="t6n">no</span><span class="t6y" style="display:none;mso-hide:all;">YES</span></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;">7. Outlook data-ogsb hook</td><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;font-weight:bold;width:90px;" width="90"><span class="t7n">no</span><span class="t7y" style="display:none;mso-hide:all;">YES</span></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;">8. Style block inside the body</td><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;font-weight:bold;width:90px;" width="90"><span class="t8n">no</span><span class="t8y" style="display:none;mso-hide:all;">YES</span></td></tr>
+
+<tr><td colspan="2" style="padding:20px 12px 8px;font-family:Arial,sans-serif;font-size:15px;color:#111111;">Part 2: can you read the words in each white box?</td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;font-weight:bold;">G</td><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" style="width:200px;height:44px;background-color:#FFFFFF;background-image:linear-gradient(#FFFFFF,#FFFFFF);border:1px solid #999999;text-align:center;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;color:#111111;">Dark text</td></tr></table></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;font-weight:bold;">H</td><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" style="width:200px;height:44px;background-color:#FFFFFF;background-image:linear-gradient(#FFFFFF,#FFFFFF);border:1px solid #999999;text-align:center;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;color:#111111;-webkit-text-fill-color:#111111;">Fill color</td></tr></table></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;font-weight:bold;">I</td><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" style="width:200px;height:44px;background-color:#FFFFFF;background-image:linear-gradient(#FFFFFF,#FFFFFF);border:1px solid #999999;text-align:center;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;color:#E11D2A;">Red text</td></tr></table></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;font-weight:bold;">J</td><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font-family:Arial,sans-serif;font-size:15px;color:#111111;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" style="width:200px;height:44px;background-color:#FFFFFF;background-image:linear-gradient(#FFFFFF,#FFFFFF);border:1px solid #999999;text-align:center;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;color:#E11D2A;-webkit-text-fill-color:#E11D2A;">Red fill</td></tr></table></td></tr>
+
+</table></td></tr></table></center></body></html>
