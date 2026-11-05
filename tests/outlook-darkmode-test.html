@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark"><meta name="supported-color-schemes" content="light dark">
+<title>Outlook dark mode test</title>
+<style>
+:root { color-scheme: light dark; supported-color-schemes: light dark; }
+.t1y{display:inline !important}.t1n{display:none !important}
+[align=center] .t2y{display:inline !important}[align=center] .t2n{display:none !important}
+@media (prefers-color-scheme: dark){.t3y{display:inline !important}.t3n{display:none !important}}
+[data-ogsc] .t4y{display:inline !important}[data-ogsc] .t4n{display:none !important}
+[data-ogsb] .t5y{display:inline !important}[data-ogsb] .t5n{display:none !important}
+[data-ogac] .t6y,[data-ogab] .t6y{display:inline !important}[data-ogac] .t6n,[data-ogab] .t6n{display:none !important}
+[data-outlook-cycle] .t7y{display:inline !important}[data-outlook-cycle] .t7n{display:none !important}
+</style></head>
+<body style="margin:0;padding:0;background-color:#F2F2F2;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#F2F2F2" style="background-color:#F2F2F2;color:#111111;"><tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="width:100%;max-width:600px;background-color:#FFFFFF;color:#111111;">
+<tr><td colspan="2" style="padding:16px 12px;font:bold 20px Arial,sans-serif;color:#111111;">Outlook dark mode test</td></tr>
+<tr><td colspan="2" style="padding:0 12px 12px;font:15px Arial,sans-serif;color:#111111;">Open this in dark mode. Part 1: which lines say YES?</td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:15px Arial,sans-serif;color:#111111;">1. Style block is kept (control)</td>
+<td bgcolor="#FFFFFF" style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:bold 15px Arial,sans-serif;color:#111111;width:90px;" width="90"><font color="#111111"><span class="t1n">no</span><span class="t1y" style="display:none;mso-hide:all;">YES</span></font></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:15px Arial,sans-serif;color:#111111;">2. Attribute selectors are kept (control)</td>
+<td bgcolor="#FFFFFF" style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:bold 15px Arial,sans-serif;color:#111111;width:90px;" width="90"><font color="#111111"><span class="t2n">no</span><span class="t2y" style="display:none;mso-hide:all;">YES</span></font></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:15px Arial,sans-serif;color:#111111;">3. Dark mode media query</td>
+<td bgcolor="#FFFFFF" style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:bold 15px Arial,sans-serif;color:#111111;width:90px;" width="90"><font color="#111111"><span class="t3n">no</span><span class="t3y" style="display:none;mso-hide:all;">YES</span></font></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:15px Arial,sans-serif;color:#111111;">4. Outlook data-ogsc hook</td>
+<td bgcolor="#FFFFFF" style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:bold 15px Arial,sans-serif;color:#111111;width:90px;" width="90"><font color="#111111"><span class="t4n">no</span><span class="t4y" style="display:none;mso-hide:all;">YES</span></font></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:15px Arial,sans-serif;color:#111111;">5. Outlook data-ogsb hook</td>
+<td bgcolor="#FFFFFF" style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:bold 15px Arial,sans-serif;color:#111111;width:90px;" width="90"><font color="#111111"><span class="t5n">no</span><span class="t5y" style="display:none;mso-hide:all;">YES</span></font></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:15px Arial,sans-serif;color:#111111;">6. Outlook data-ogac / data-ogab hook</td>
+<td bgcolor="#FFFFFF" style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:bold 15px Arial,sans-serif;color:#111111;width:90px;" width="90"><font color="#111111"><span class="t6n">no</span><span class="t6y" style="display:none;mso-hide:all;">YES</span></font></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:15px Arial,sans-serif;color:#111111;">7. Outlook app data-outlook-cycle hook</td>
+<td bgcolor="#FFFFFF" style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:bold 15px Arial,sans-serif;color:#111111;width:90px;" width="90"><font color="#111111"><span class="t7n">no</span><span class="t7y" style="display:none;mso-hide:all;">YES</span></font></td></tr>
+
+<tr><td colspan="2" style="padding:20px 12px 8px;font:15px Arial,sans-serif;color:#111111;">Part 2: does each box match the square next to it?</td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:bold 15px Arial,sans-serif;color:#111111;width:40px;" width="40">A</td>
+<td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+<td width="120" height="48" style="width:120px;height:48px;background-color:#121215;font:bold 14px Arial,sans-serif;color:#FFFFFF;text-align:center;border:1px solid #999999;">Box A</td>
+<td width="16" style="width:16px;">&nbsp;</td>
+<td width="120" style="width:120px;"><img src="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/tests/swatch-dark.png" width="120" height="48" alt="dark square" style="display:block;width:120px;height:48px;border:1px solid #999999;"></td>
+</tr></table></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:bold 15px Arial,sans-serif;color:#111111;width:40px;" width="40">B</td>
+<td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+<td width="120" height="48" style="width:120px;height:48px;background-color:#121215;background-image:linear-gradient(#121215,#121215);font:bold 14px Arial,sans-serif;color:#FFFFFF;text-align:center;border:1px solid #999999;">Box B</td>
+<td width="16" style="width:16px;">&nbsp;</td>
+<td width="120" style="width:120px;"><img src="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/tests/swatch-dark.png" width="120" height="48" alt="dark square" style="display:block;width:120px;height:48px;border:1px solid #999999;"></td>
+</tr></table></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:bold 15px Arial,sans-serif;color:#111111;width:40px;" width="40">C</td>
+<td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+<td width="120" height="48" background="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/tests/tile-dark.png" style="width:120px;height:48px;background-color:#121215;background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/tests/tile-dark.png);font:bold 14px Arial,sans-serif;color:#FFFFFF;text-align:center;border:1px solid #999999;">Box C</td>
+<td width="16" style="width:16px;">&nbsp;</td>
+<td width="120" style="width:120px;"><img src="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/tests/swatch-dark.png" width="120" height="48" alt="dark square" style="display:block;width:120px;height:48px;border:1px solid #999999;"></td>
+</tr></table></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:bold 15px Arial,sans-serif;color:#111111;width:40px;" width="40">D</td>
+<td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+<td width="120" height="48" background="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/tests/tile-dark.png" style="width:120px;height:48px;background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/tests/tile-dark.png);font:bold 14px Arial,sans-serif;color:#FFFFFF;text-align:center;border:1px solid #999999;">Box D</td>
+<td width="16" style="width:16px;">&nbsp;</td>
+<td width="120" style="width:120px;"><img src="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/tests/swatch-dark.png" width="120" height="48" alt="dark square" style="display:block;width:120px;height:48px;border:1px solid #999999;"></td>
+</tr></table></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:bold 15px Arial,sans-serif;color:#111111;width:40px;" width="40">E</td>
+<td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+<td width="120" height="48" style="width:120px;height:48px;background-color:#FFFFFF;background-image:linear-gradient(#FFFFFF,#FFFFFF);font:bold 14px Arial,sans-serif;color:#111111;text-align:center;border:1px solid #999999;">Box E</td>
+<td width="16" style="width:16px;">&nbsp;</td>
+<td width="120" style="width:120px;"><img src="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/tests/swatch-white.png" width="120" height="48" alt="white square" style="display:block;width:120px;height:48px;border:1px solid #999999;"></td>
+</tr></table></td></tr>
+<tr><td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;font:bold 15px Arial,sans-serif;color:#111111;width:40px;" width="40">F</td>
+<td style="padding:8px 12px;border-bottom:1px solid #DDDDDD;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+<td width="120" height="48" background="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/tests/tile-white.png" style="width:120px;height:48px;background-color:#FFFFFF;background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/tests/tile-white.png);font:bold 14px Arial,sans-serif;color:#111111;text-align:center;border:1px solid #999999;">Box F</td>
+<td width="16" style="width:16px;">&nbsp;</td>
+<td width="120" style="width:120px;"><img src="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/tests/swatch-white.png" width="120" height="48" alt="white square" style="display:block;width:120px;height:48px;border:1px solid #999999;"></td>
+</tr></table></td></tr>
+
+</table></td></tr></table></body></html>
