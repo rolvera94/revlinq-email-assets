@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<title>Revlinq Support</title>
+<style>
+  :root { color-scheme: light dark; supported-color-schemes: light dark; }
+  @media (prefers-color-scheme: dark) {
+    .x-page { background-color:#0B0B0D !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-page.png) !important; background-repeat:repeat !important; }
+    .x-card { background-color:#121215 !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-card.png) !important; background-repeat:repeat !important; border:1px solid #2A2A30 !important; box-shadow:0 18px 40px rgba(0,0,0,0.6) !important; }
+    .x-head { background-color:#121215 !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/bg-dark-head.jpg) !important; background-size:cover !important; background-repeat:no-repeat !important; background-position:center !important; }
+    .x-bot { background-color:#121215 !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/bg-dark-bot.jpg) !important; background-size:cover !important; background-repeat:no-repeat !important; background-position:center !important; }
+    .x-line { background-color:#FF2D3A !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-line.png) !important; background-repeat:repeat !important; }
+    .x-badge { background-color:#1A0B0C !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-badge.png) !important; background-repeat:repeat !important; border:2px solid #FF2D3A !important; box-shadow:0 0 14px rgba(255,45,58,0.7), inset 0 0 10px rgba(255,45,58,0.35) !important; }
+    .x-div { border-left:2px solid #3A3A42 !important; }
+    .x-title { color:#FFFFFF !important; }
+    .x-greet { color:#FFFFFF !important; }
+    .x-body { color:#E6E6EA !important; }
+    .x-h2 { color:#FFFFFF !important; }
+    .x-txt { color:#FFFFFF !important; }
+    .x-lbl { color:#FFFFFF !important; }
+    .x-box { background-color:#1C1C21 !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-box.png) !important; background-size:100% 100% !important; background-repeat:no-repeat !important; border:1px solid #C81E28 !important; box-shadow:0 0 16px rgba(225,29,42,0.45) !important; }
+    .x-blue { background-color:#0F3566 !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-blue.png) !important; background-repeat:repeat !important; color:#FFFFFF !important; border:1px solid #2D6BD1 !important; }
+    .x-green { background-color:#12852F !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-green.png) !important; background-repeat:repeat !important; color:#FFFFFF !important; border:1px solid #2BC253 !important; }
+    .x-tile { background-color:#B3141E !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-tile.png) !important; background-size:100% 100% !important; background-repeat:no-repeat !important; border:1px solid #FF3B47 !important; box-shadow:0 0 10px rgba(225,29,42,0.5) !important; }
+    .x-foot { background-color:#0E0E10 !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-foot.png) !important; background-repeat:repeat !important; border:2px solid #FF2D3A !important; box-shadow:0 0 12px rgba(255,45,58,0.45) !important; }
+    .x-ftxt { color:#FFFFFF !important; }
+    .light-img { display:none !important; max-height:0 !important; }
+    .dark-img { display:block !important; max-height:none !important; }
+  }
+  [data-ogsc] .light-img, [data-ogsb] .light-img { display:none !important; max-height:0 !important; }
+  [data-ogsc] .dark-img, [data-ogsb] .dark-img { display:block !important; max-height:none !important; }
+  [data-ogsc] .x-page, [data-ogsb] .x-page { background-color:#0B0B0D !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-page.png) !important; background-repeat:repeat !important; }
+  [data-ogsc] .x-card, [data-ogsb] .x-card { background-color:#121215 !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-card.png) !important; background-repeat:repeat !important; border:1px solid #2A2A30 !important; box-shadow:0 18px 40px rgba(0,0,0,0.6) !important; }
+  [data-ogsc] .x-head, [data-ogsb] .x-head { background-color:#121215 !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/bg-dark-head.jpg) !important; background-size:cover !important; background-repeat:no-repeat !important; background-position:center !important; }
+  [data-ogsc] .x-bot, [data-ogsb] .x-bot { background-color:#121215 !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/bg-dark-bot.jpg) !important; background-size:cover !important; background-repeat:no-repeat !important; background-position:center !important; }
+  [data-ogsc] .x-line, [data-ogsb] .x-line { background-color:#FF2D3A !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-line.png) !important; background-repeat:repeat !important; }
+  [data-ogsc] .x-badge, [data-ogsb] .x-badge { background-color:#1A0B0C !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-badge.png) !important; background-repeat:repeat !important; border:2px solid #FF2D3A !important; box-shadow:0 0 14px rgba(255,45,58,0.7), inset 0 0 10px rgba(255,45,58,0.35) !important; }
+  [data-ogsc] .x-div, [data-ogsb] .x-div { border-left:2px solid #3A3A42 !important; }
+  [data-ogsc] .x-title, [data-ogsb] .x-title { color:#FFFFFF !important; }
+  [data-ogsc] .x-greet, [data-ogsb] .x-greet { color:#FFFFFF !important; }
+  [data-ogsc] .x-body, [data-ogsb] .x-body { color:#E6E6EA !important; }
+  [data-ogsc] .x-h2, [data-ogsb] .x-h2 { color:#FFFFFF !important; }
+  [data-ogsc] .x-txt, [data-ogsb] .x-txt { color:#FFFFFF !important; }
+  [data-ogsc] .x-lbl, [data-ogsb] .x-lbl { color:#FFFFFF !important; }
+  [data-ogsc] .x-box, [data-ogsb] .x-box { background-color:#1C1C21 !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-box.png) !important; background-size:100% 100% !important; background-repeat:no-repeat !important; border:1px solid #C81E28 !important; box-shadow:0 0 16px rgba(225,29,42,0.45) !important; }
+  [data-ogsc] .x-blue, [data-ogsb] .x-blue { background-color:#0F3566 !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-blue.png) !important; background-repeat:repeat !important; color:#FFFFFF !important; border:1px solid #2D6BD1 !important; }
+  [data-ogsc] .x-green, [data-ogsb] .x-green { background-color:#12852F !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-green.png) !important; background-repeat:repeat !important; color:#FFFFFF !important; border:1px solid #2BC253 !important; }
+  [data-ogsc] .x-tile, [data-ogsb] .x-tile { background-color:#B3141E !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-tile.png) !important; background-size:100% 100% !important; background-repeat:no-repeat !important; border:1px solid #FF3B47 !important; box-shadow:0 0 10px rgba(225,29,42,0.5) !important; }
+  [data-ogsc] .x-foot, [data-ogsb] .x-foot { background-color:#0E0E10 !important; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/dk-foot.png) !important; background-repeat:repeat !important; border:2px solid #FF2D3A !important; box-shadow:0 0 12px rgba(255,45,58,0.45) !important; }
+  [data-ogsc] .x-ftxt, [data-ogsb] .x-ftxt { color:#FFFFFF !important; }
+  @media only screen and (max-width: 520px) {
+    .px { padding-left: 20px !important; padding-right: 20px !important; }
+    .stack { display: block !important; width: 100% !important; text-align: center !important; padding-left: 0 !important; padding-right: 0 !important; }
+    .stack table { margin: 0 auto !important; }
+    .ttl { border-left: none !important; padding: 12px 0 0 0 !important; }
+    .mc { text-align: center !important; }
+    .steps { width: auto !important; margin: 0 auto !important; }
+  }
+</style>
+</head>
+<body class="x-page " style="background-color:#EEF0F4; background-image:none; margin:0; padding:0;">
+<center style="width:100%;">
+<table role="presentation" class="x-page " style="background-color:#EEF0F4; background-image:none; width:100%; margin:0 auto; padding:0;" border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+  <tr>
+    <td align="center" style="padding:28px 12px; text-align:center;">
+      <!--[if mso]><table role="presentation" width="680" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+      <table role="presentation" class="x-card " style="background-color:#FFFFFF; background-image:none; border:1px solid #DDE1E8; box-shadow:0 10px 30px rgba(20,24,40,0.10); width:100%; max-width:680px; margin:0 auto; border-radius:16px; overflow:hidden; border-collapse:separate; text-align:left;" border="0" cellpadding="0" cellspacing="0" width="680" align="center">
+        <tr>
+          <td class="x-head " style="background-color:transparent; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/bg-light-head-t.png); background-size:cover; background-repeat:no-repeat; background-position:center; padding:18px 20px 4px 20px; text-align:center;" align="center">
+            <img class="light-img" src="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/lockup-light-h.png" width="252" height="138" alt="Revlinq - The Power of One" style="display:block; margin:0 auto; border:0; width:252px; height:auto; "><!--[if !mso]><!--><img class="dark-img" src="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/lockup-dark-p.png" width="252" height="138" alt="Revlinq - The Power of One" style="display:none; max-height:0; overflow:hidden; margin:0 auto; border:0; width:252px; height:auto; "><!--<![endif]-->
+          </td>
+        </tr>
+        <tr><td class="x-line " style="background-color:#E11D2A; background-image:none; height:3px; line-height:3px; font-size:0;">&nbsp;</td></tr>
+        <tr>
+          <td class="px" align="center" style="padding:26px 36px 0 36px; text-align:center;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;">
+              <tr>
+                <td class="stack" style="white-space:nowrap; vertical-align:middle; padding-right:16px;">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr>
+                    <td class="x-badge " style="background-color:#E11D2A; background-image:linear-gradient(180deg, #F2353F 0%, #C9121D 100%); border:2px solid #FF5A63; box-shadow:0 3px 12px rgba(225,29,42,0.45); padding:6px 14px; border-radius:10px; font-family:'Segoe UI', Arial, Helvetica, sans-serif; font-size:20px; font-weight:800; color:#FFFFFF; white-space:nowrap;"><table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td valign="middle" style="vertical-align:middle; padding:0 7px 0 0; line-height:0; font-size:0;"><img src="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/icon-ticket.png" width="22" height="22" alt="" style="display:block; width:22px; height:22px; border:0;"></td><td valign="middle" style="vertical-align:middle; font-family:'Segoe UI', Arial, Helvetica, sans-serif; font-size:20px; line-height:24px; font-weight:800; color:#FFFFFF; white-space:nowrap;">#185</td></tr></table></td>
+                  </tr></table>
+                </td>
+                <td class="x-title stack ttl" style="color:#111318; vertical-align:middle; border-left:2px solid #D5D9E0; padding-left:16px; font-family:'Segoe UI', Arial, Helvetica, sans-serif; font-size:20px; font-weight:800; line-height:1.25; letter-spacing:-0.2px;">Your email has been received.</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="px" style="padding:20px 40px 0 40px;">
+            <p class="x-greet mc" style="color:#111318; margin:0 0 6px 0; font-family:'Segoe UI', Arial, Helvetica, sans-serif; font-size:16px; font-weight:700;">Hello Richard,</p>
+            <p class="x-body mc" style="color:#2B2F38; margin:0; font-family:'Segoe UI', Arial, Helvetica, sans-serif; font-size:15px; line-height:1.55;">Thank you for contacting Revlinq Support. We&rsquo;ve successfully received your email, and our team will review it shortly.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="px" style="padding:20px 36px 0 36px;">
+            <table role="presentation" class="x-box " style="background-color:#F4F6F9; background-image:none; border:1px solid #DDE2EA; box-shadow:none; width:100%; border-radius:12px; border-collapse:separate;" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td width="50%" align="center" style="width:50%; padding:12px 8px; text-align:center;">
+                  <p class="x-lbl " style="color:#1F2430; margin:0 0 6px 0; font-family:'Segoe UI', Arial, Helvetica, sans-serif; font-size:14px;">Status</p>
+                  <span class="x-blue " style="background-color:#CFE0FF; background-image:none; color:#1748C8; border:1px solid #CFE0FF; display:inline-block; white-space:nowrap; padding:4px 16px; border-radius:999px; font-family:'Segoe UI', Arial, Helvetica, sans-serif; font-size:15px; font-weight:700;">Received</span>
+                </td>
+                <td width="1" style="width:1px; padding:14px 0;"><div class="x-div " style="border-left:2px solid #D5D9E0; width:0; height:46px;"></div></td>
+                <td width="50%" align="center" style="width:50%; padding:12px 8px; text-align:center;">
+                  <p class="x-lbl " style="color:#1F2430; margin:0 0 6px 0; font-family:'Segoe UI', Arial, Helvetica, sans-serif; font-size:14px;">Next Step</p>
+                  <span class="x-green " style="background-color:#CDF3D8; background-image:none; color:#17863A; border:1px solid #CDF3D8; display:inline-block; white-space:nowrap; padding:4px 16px; border-radius:999px; font-family:'Segoe UI', Arial, Helvetica, sans-serif; font-size:15px; font-weight:700;">In Progress</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="px" style="padding:24px 40px 0 40px;">
+            <p class="x-h2 mc" style="color:#111318; margin:0 0 14px 0; font-family:'Segoe UI', Arial, Helvetica, sans-serif; font-size:20px; font-weight:800;">What happens next?</p>
+            <table role="presentation" class="steps" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
+              <tr>
+                <td width="40" style="width:40px; padding:0 0 10px 0; vertical-align:middle;">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="38"><tr>
+                    <td class="x-tile " style="background-color:#EEF1F5; background-image:none; border:1px solid #E1E5EC; box-shadow:none; width:38px; height:38px; border-radius:9px; text-align:center; vertical-align:middle;" width="38" height="38" align="center" valign="middle"><img class="light-img" src="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/icon-users-light-h.png" width="20" height="20" alt="" style="display:block; margin:0 auto; border:0; width:20px; height:auto; "><!--[if !mso]><!--><img class="dark-img" src="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/icon-users-dark.png" width="20" height="20" alt="" style="display:none; max-height:0; overflow:hidden; margin:0 auto; border:0; width:20px; height:auto; "><!--<![endif]--></td>
+                  </tr></table>
+                </td>
+                <td class="x-txt " style="color:#1F2430; padding:0 0 10px 14px; vertical-align:middle; font-family:'Segoe UI', Arial, Helvetica, sans-serif; font-size:15px; line-height:1.4;">Our team reviews your email</td>
+              </tr>
+              <tr>
+                <td width="40" style="width:40px; padding:0 0 10px 0; vertical-align:middle;">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="38"><tr>
+                    <td class="x-tile " style="background-color:#EEF1F5; background-image:none; border:1px solid #E1E5EC; box-shadow:none; width:38px; height:38px; border-radius:9px; text-align:center; vertical-align:middle;" width="38" height="38" align="center" valign="middle"><img class="light-img" src="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/icon-bell-light-h.png" width="20" height="20" alt="" style="display:block; margin:0 auto; border:0; width:20px; height:auto; "><!--[if !mso]><!--><img class="dark-img" src="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/icon-bell-dark.png" width="20" height="20" alt="" style="display:none; max-height:0; overflow:hidden; margin:0 auto; border:0; width:20px; height:auto; "><!--<![endif]--></td>
+                  </tr></table>
+                </td>
+                <td class="x-txt " style="color:#1F2430; padding:0 0 10px 14px; vertical-align:middle; font-family:'Segoe UI', Arial, Helvetica, sans-serif; font-size:15px; line-height:1.4;">We&rsquo;ll follow up as soon as possible</td>
+              </tr>
+              <tr>
+                <td width="40" style="width:40px; padding:0 0 0px 0; vertical-align:middle;">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="38"><tr>
+                    <td class="x-tile " style="background-color:#EEF1F5; background-image:none; border:1px solid #E1E5EC; box-shadow:none; width:38px; height:38px; border-radius:9px; text-align:center; vertical-align:middle;" width="38" height="38" align="center" valign="middle"><img class="light-img" src="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/icon-reply-light-h.png" width="20" height="20" alt="" style="display:block; margin:0 auto; border:0; width:20px; height:auto; "><!--[if !mso]><!--><img class="dark-img" src="https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/icon-reply-dark.png" width="20" height="20" alt="" style="display:none; max-height:0; overflow:hidden; margin:0 auto; border:0; width:20px; height:auto; "><!--<![endif]--></td>
+                  </tr></table>
+                </td>
+                <td class="x-txt " style="color:#1F2430; padding:0 0 0px 14px; vertical-align:middle; font-family:'Segoe UI', Arial, Helvetica, sans-serif; font-size:15px; line-height:1.4;">Reply to this email if you&rsquo;d like to add more details</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="x-bot px" style="background-color:transparent; background-image:url(https://raw.githubusercontent.com/rolvera94/revlinq-email-assets/main/auto-reply/bg-light-bot-t.png); background-size:cover; background-repeat:no-repeat; background-position:center; padding:26px 36px 52px 36px;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;"><tr>
+              <td class="x-foot " style="background-color:#E11D2A; background-image:linear-gradient(180deg, #F02A35 0%, #C9121D 100%); border:2px solid #E11D2A; box-shadow:0 3px 10px rgba(225,29,42,0.30); padding:12px 10px; border-radius:10px; text-align:center;" align="center">
+                <span class="x-ftxt " style="color:#FFFFFF; font-family:'Segoe UI', Arial, Helvetica, sans-serif; font-size:14px; font-weight:700; letter-spacing:4px;">REVLINQ SUPPORT</span>
+              </td>
+            </tr></table>
+          </td>
+        </tr>
+      </table>
+      <!--[if mso]></td></tr></table><![endif]-->
+    </td>
+  </tr>
+</table>
+</center>
+</body>
+</html>
